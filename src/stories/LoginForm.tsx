@@ -8,13 +8,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ title }) => {
   const [showResult, setShowResult] = useState(false);
 
   const formHandler = () => {
-    // setShowResult(true);
+    setShowResult(true);
   };
 
   return (
     <div>
+      {title && <h2>{title}</h2>}
       <input data-testid="email" />
-      <input data-testid="password" />
+      <input data-testid="password" type="password" />
       <button onClick={formHandler}>Submit</button>
       {showResult && (
         <div>

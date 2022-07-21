@@ -11,8 +11,8 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button primary>Button</Button>;
-// export const Primary = () => <Button primary label='Button' />;
+// export const Primary = () => <Button primary>Button</Button>;
+export const Primary = () => <Button primary label='Button' />;
 
 export const Secondary = () => <Button backgroundColor="#ff0" label="😄👍😍💯" />;
 export const Tertiary = () => <Button backgroundColor="#ff0" label="📚📕📈🤓" />;
