@@ -68,7 +68,10 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.7.1",
     "prop-types": "^15.8.1",
     "webpack": "^5.73.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "react-practice_21-storybook@0.1.0"
 }

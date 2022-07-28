@@ -1,4 +1,4 @@
-interface Task4Props {
+export interface Task4Props {
   /** Composition of the task */
   task: {
     /** Id of the task */

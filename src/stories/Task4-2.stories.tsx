@@ -9,18 +9,30 @@ export default {
 const Template: ComponentStory<typeof Task4> = (args) => <Task4 {...args} />;
 
 export const Default = Template.bind({});
+
+// Default.args = {
+//   task: {
+//     id: '1',
+//     title: 'Test Task',
+//     state: 'TASK_INBOX'
+//   }
+// };
+
+const task = {
+  id: '1',
+  title: 'Test Task',
+  state: 'TASK_INBOX'
+};
+
 Default.args = {
-  task: {
-    id: '1',
-    title: 'Test Task',
-    state: 'TASK_INBOX'
-  }
+  task
 };
 
 export const Pinned = Template.bind({});
 Pinned.args = {
   task: {
-    ...Default.args.task,
+    // ...Default.args.task,
+    ...task,
     state: 'TASK_PINNED'
   }
 };
@@ -28,7 +40,8 @@ Pinned.args = {
 export const Archived = Template.bind({});
 Archived.args = {
   task: {
-    ...Default.args.task,
+    // ...Default.args.task,
+    ...task,
     state: 'TASK_ARCHIVED'
   }
 };
